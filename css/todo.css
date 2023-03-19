@@ -3,10 +3,27 @@ body {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
-
+.form{
+	align-content: center;
+	
+}
+.form-data{
+	padding-bottom: 10px;
+}
 .intro {
 	margin: 30px 0px;
 	font-weight: bold;
+}
+#newitems{
+	width: 250px;
+	height: 100px;
+}
+
+
+button{
+	background-color: #025F70;
+	border-radius: 5px;
+
 }
 
 h1 {

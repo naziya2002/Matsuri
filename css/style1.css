@@ -162,11 +162,13 @@ background-color: rgb(194, 30, 84);
      font-size: 120%;
      font-weight: 500;
      padding-right: 10px;
+     padding-bottom: 10px;
+     border-radius: 5px;
  }
 
  a.nav-link:hover{
     background-color: #90e0ef;
-    font-size: 19px;   
+    font-size: 15px;   
  }
 
 a span{
@@ -406,8 +408,15 @@ a:hover{
         cursor: pointer;
         
     }
+    #navbarNav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 50px;
+
+    }
 
     #navbarNav .dropdown-menu .dropdown-item{
+       
         font-size: 17px;
 
     }
@@ -419,7 +428,9 @@ a:hover{
         font-size: 17px;
 
     }
-
+    .pb-5, .py-5{
+        padding-bottom: 0px;
+    }
 
 .overlay{
     overflow: hidden;
@@ -558,9 +569,40 @@ h6{
   .hamburger {
     display: none;
   }
+  #contacts{
+    position: aboulute;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-clip: border-box;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    width: 900px;
+    height: 430px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
 
   @media screen and (min-width: 801px) {
+    #contacts{
+        position: aboulute;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-clip: border-box;
+        border: 1px solid black;
+        border-radius: 0.25em;
+        width: 900px;
+        height: 430px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+     .col-md-11{
+        width: 300px;
+    }
     #menu {
         justify-content: cover;
       display: inline-block;
@@ -575,9 +617,18 @@ h6{
       height: 160px;
       color: black;
     }
+    .circle{
+        padding-left: 0px;
+    }
   }
   
   @media screen and (max-width: 800px) {
+    #contacts{
+        width: 420px;
+        padding-left: 0px;
+        height: 430px;
+    }
+   
   
     .header {
       flex-direction: column;
@@ -593,7 +644,9 @@ h6{
     .hamburger {
       display: block;
     }
-  
+    .circle{
+        padding-left: 0px;
+    }
    
     .list {
       grid-auto-flow: row;
@@ -644,12 +697,21 @@ h6{
 /* Responsive Website */
 
 @media only screen and (min-width:320px) and (max-width:480px) {
+    #contacts{
+        width: 400px;
+        padding-left: 0px;
+    }
+   
     .top-header .col-md-5 h6{
         display:none
     }
       
-    
-      
+    .circle{
+        padding-left: 0px;
+    }
+  div#icons.col-md-3.mt-2{
+        display: none;
+    }
       #navbarNav .nav-item .nav-link{
         text-decoration: none;
         color: #000;
@@ -852,7 +914,10 @@ display: inline;
     margin-left: 3%;
 
 }
-
+#contact-card{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 /* InnerPage starts */
 
 #productpage .row .col-md-5{
@@ -863,10 +928,10 @@ display: inline;
     width: 40%;
 }
 
-#contact .row .col-md-10{
+#contacts{
   position: absolute;
-  left: 22%;
-  top: -18%;
+  
+  
 }
 
 #contact .review-rating{
@@ -887,9 +952,15 @@ input{
     width:100%;
 }
 .formdiv{
-    padding-left: 0px;
+    padding-left: 20px;
 }
+#contacts{
+    width: 300px;
 
+}
+.navbar-nav{
+    background-color: #59c3d6;
+}
 }
 
 
@@ -904,7 +975,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* For Firefox */
-input[type=number] {
+/* For Firefox */input[type=number] {
   -moz-appearance: textfield;
 }

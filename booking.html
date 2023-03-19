@@ -56,19 +56,19 @@
                    
                     <div class="form-body">
                         <div class="row form-row">
-                            <label for="">Enter FullName</label>
+                            <label for="">FullName</label>
                         <input type="text" id="name" placeholder="FullName" class="form-control">
                     </div>
                     <div class="row form-row">
-                        <label for="">Enter Mobile Number</label>
+                        <label for="">Mobile Number</label>
                         <input type="text" id="mob-number" placeholder="+91" class="form-control">
                     </div>
                     <div class="row form-row">
-                        <label for="">Enter Email</label>
+                        <label for="">Email</label>
                         <input type="text" id="email" placeholder="abc@gmail.com" class="form-control">
                     </div>
                     <div   id="dat" class="row form-row">
-                        <label for="">Enter Date of Occation</label>
+                        <label for=""> Occation Date</label>
                         <input  type="date" id="date" placeholder="" class="form-control">
                     </div>
                     <div class="row form-row">
@@ -76,20 +76,20 @@
                         <input type="text" id="occation" placeholder=" " class="form-control">
                     </div>
                     <div class="row form-row">
-                        <label for=""> Theme</label>
-                        <input type="text" id="theme" placeholder=" " class="form-control">
-                    </div>
-                    <div class="row form-row">
-                        <label for="">What event planning services are you looking for?</label>
-                        <input type="text" id="service" placeholder=" " class="form-control">
-                    </div>
-                    <div class="row form-row">
-                        <label for="">What is your total budget or your budget per person?</label>
+                        <label for="">Budget</label>
                         <input type="text" id="budget" placeholder=" " class="form-control">
                     </div>
                     <div class="row form-row">
-                        <label for="">Do you have any concerns or potential challenges in mind for this event?</label>
-                        <input type="text" id="concern" placeholder=" " class="form-control">
+                        <label for="">Event Services You Are  Looking For?</label>
+                        <input type="text" id="service" placeholder=" " class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <label for="">Date Of Availabity</label>
+                        <input type="date" id="dateofavailability" placeholder=" " class="form-control">
+                    </div>
+                    <div class="row form-row">
+                        <label for="">Time of Availability</label>
+                        <input type="time" id="timeofavailability" placeholder=" " class="form-control">
                     </div>
                    
                    
@@ -195,10 +195,10 @@
    var mob_number=document.getElementById('mob-number');
    var date=document.getElementById('date');
    var occation=document.getElementById('occation');
-   var theme=document.getElementById('theme');
+   var dateofavailability=document.getElementById('dateofavailability');
    var service=document.getElementById('service');
    var budget=document.getElementById('budget');
-   var concern=document.getElementById('concern');
+   var timeofavailability=document.getElementById('timeofavailability');
    
    var button=document.getElementById('button');
    var id=document.getElementById('number')
@@ -212,10 +212,10 @@
         mob_number:mob_number.value,
         date:date.value,
         occation:occation.value,
-        theme:theme.value,
+        dateofavailability:dateofavailability.value,
         service:service.value,
         budget:budget.value,
-        concern:concern.value
+        timeofavailability:timeofavailability.value
     })
     .then(()=>{
         alert("Booking Confirmed")
